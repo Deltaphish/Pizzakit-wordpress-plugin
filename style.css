@@ -1,0 +1,30 @@
+ body {
+  font-family: "Special Elite";
+  font-size: 18px;
+  background-color: #fcf7e6;
+  }
+
+  head {
+    font-family: "Special Elite";
+    font-size: 26px;
+  }
+  
+  .h-divider{
+    margin-top:5px;
+    margin-bottom:5px;
+    height:1px;
+    width:100%;
+    border-top:1px solid gray;
+   }
+  
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .smal {
+    max-width: 250px;
+  }

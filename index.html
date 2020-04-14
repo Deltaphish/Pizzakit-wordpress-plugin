@@ -1,0 +1,190 @@
+<html>
+<!-- bootstrap CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<!--JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<!-- Pretty Checkbox -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css">
+<!-- Font "Special Elite" -->
+<link rel="stylesheet" id="olympus-google-fonts-css"
+    href="https://fonts.googleapis.com/css?family=Special+Elite%3A400%2C400i&amp;subset=latin&amp;display=swap&amp;ver=1.9.97"
+    media="all">
+<!-- Läs in lokala filer -->
+<link rel="stylesheet" href="style.css">
+<script src="app.js"></script>
+
+<head></head>
+
+<body>
+    <!-- header -->
+    <div class="page-header text-center" style="padding-left: 10px; padding-right: 10px">
+        <h2>Pizzabeställningsformulär ver 0.0000001</h2>
+    </div>
+
+    <!-- Ifyllnad börjar-->
+    <div class="container-fluid " style="max-width: 800px;">
+        <form>
+            <!-- Email -->
+            <div class="form-group smal" style="max-width: 250px">
+                <label for="exampleInputEmail1">Email:</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="exempel@mail.se">
+            </div>
+            <!-- Telefonnummer -->
+            <div class="form-group smal">
+                <label>Telefonnummer:</label>
+                <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="070.......">
+            </div>
+
+            <!-- Välj storlek på kit -->
+            <div class="form-group">
+                <label>Storlek på pizzakit:</label>
+                <div>
+                    <div class="pretty p-default p-round">
+                        <input type="radio" name="radio1">
+                        <div class="state">
+                            <label>Picollo</label>
+                        </div>
+                    </div>
+
+                    <div class="pretty p-default p-round">
+                        <input type="radio" name="radio1">
+                        <div class="state">
+                            <label>Grande</label>
+                        </div>
+                    </div>
+                </div>
+                <div style="padding-top: 10px">
+                    <small class="form-text text-muted" style="padding-top: 50px">Storlek Picollo räcker till ~2st
+                        degar,
+                        och grande till ~4st</small>
+                </div>
+                <div style="padding-top: 10px">
+                    <small class="form-text text-muted"> I alla pizzakit ingår Tomatsås, San Marzano Fior di Latte
+                        (mozarella) samt en basilikakruka</small>
+                </div>
+            </div>
+
+            <!-- Välj pålägg -->
+            <div class="form-group">
+                <label style="padding-bottom: 5px;">Välj toppings:</label>
+                <!-- salami mild -->
+                <div class="form-group">
+                    <div class="pretty p-svg p-curve">
+                        <input type="checkbox" />
+                        <div class="state p-success">
+                            <!-- svg grn checkbox -->
+                            <svg class="svg svg-icon" viewBox="0 0 20 20">
+                                <path
+                                    d="M7.629,14.566c0.125,0.125,0.291,0.188,0.456,0.188c0.164,0,0.329-0.062,0.456-0.188l8.219-8.221c0.252-0.252,0.252-0.659,0-0.911c-0.252-0.252-0.659-0.252-0.911,0l-7.764,7.763L4.152,9.267c-0.252-0.251-0.66-0.251-0.911,0c-0.252,0.252-0.252,0.66,0,0.911L7.629,14.566z"
+                                    style="stroke: white;fill:white;"></path>
+                            </svg>
+                            <label>Salami Mild (20kr / 5 skivor)</label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- salami stark -->
+                <div class="form-group">
+                    <div class="pretty p-svg p-curve">
+                        <input type="checkbox" />
+                        <div class="state p-success">
+                            <!-- svg grn checkbox -->
+                            <svg class="svg svg-icon" viewBox="0 0 20 20">
+                                <path
+                                    d="M7.629,14.566c0.125,0.125,0.291,0.188,0.456,0.188c0.164,0,0.329-0.062,0.456-0.188l8.219-8.221c0.252-0.252,0.252-0.659,0-0.911c-0.252-0.252-0.659-0.252-0.911,0l-7.764,7.763L4.152,9.267c-0.252-0.251-0.66-0.251-0.911,0c-0.252,0.252-0.252,0.66,0,0.911L7.629,14.566z"
+                                    style="stroke: white;fill:white;"></path>
+                            </svg>
+                            <label>Salami Stark 20kr / 5 skivor</label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- parmaskinka -->
+                <div class="form-group">
+                    <div class="pretty p-svg p-curve">
+                        <input type="checkbox" />
+                        <div class="state p-success">
+                            <!-- svg grn checkbox -->
+                            <svg class="svg svg-icon" viewBox="0 0 20 20">
+                                <path
+                                    d="M7.629,14.566c0.125,0.125,0.291,0.188,0.456,0.188c0.164,0,0.329-0.062,0.456-0.188l8.219-8.221c0.252-0.252,0.252-0.659,0-0.911c-0.252-0.252-0.659-0.252-0.911,0l-7.764,7.763L4.152,9.267c-0.252-0.251-0.66-0.251-0.911,0c-0.252,0.252-0.252,0.66,0,0.911L7.629,14.566z"
+                                    style="stroke: white;fill:white;"></path>
+                            </svg>
+                            <label>Parmaskinka 20kr/ 5 skivor</label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Prosciutto Cotto -->
+                <div class="form-group">
+                    <div class="pretty p-svg p-curve">
+                        <input type="checkbox" />
+                        <div class="state p-success">
+                            <!-- svg grn checkbox -->
+                            <svg class="svg svg-icon" viewBox="0 0 20 20">
+                                <path
+                                    d="M7.629,14.566c0.125,0.125,0.291,0.188,0.456,0.188c0.164,0,0.329-0.062,0.456-0.188l8.219-8.221c0.252-0.252,0.252-0.659,0-0.911c-0.252-0.252-0.659-0.252-0.911,0l-7.764,7.763L4.152,9.267c-0.252-0.251-0.66-0.251-0.911,0c-0.252,0.252-0.252,0.66,0,0.911L7.629,14.566z"
+                                    style="stroke: white;fill:white;"></path>
+                            </svg>
+                            <label>Prosciutto Cotto 20kr / 5 skivor</label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Buffelmozarella -->
+                <div class="form-group">
+                    <div class="pretty p-svg p-curve">
+                        <input type="checkbox" />
+                        <div class="state p-success">
+                            <!-- svg grn checkbox -->
+                            <svg class="svg svg-icon" viewBox="0 0 20 20">
+                                <path
+                                    d="M7.629,14.566c0.125,0.125,0.291,0.188,0.456,0.188c0.164,0,0.329-0.062,0.456-0.188l8.219-8.221c0.252-0.252,0.252-0.659,0-0.911c-0.252-0.252-0.659-0.252-0.911,0l-7.764,7.763L4.152,9.267c-0.252-0.251-0.66-0.251-0.911,0c-0.252,0.252-0.252,0.66,0,0.911L7.629,14.566z"
+                                    style="stroke: white;fill:white;"></path>
+                            </svg>
+                            <label>Buffelmozzarella 25kr / 125g</label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Extra deg -->
+                <div class="form-group">
+                    <div class="pretty p-svg p-curve">
+                        <input type="checkbox" />
+                        <div class="state p-success">
+                            <!-- svg grn checkbox -->
+                            <svg class="svg svg-icon" viewBox="0 0 20 20">
+                                <path
+                                    d="M7.629,14.566c0.125,0.125,0.291,0.188,0.456,0.188c0.164,0,0.329-0.062,0.456-0.188l8.219-8.221c0.252-0.252,0.252-0.659,0-0.911c-0.252-0.252-0.659-0.252-0.911,0l-7.764,7.763L4.152,9.267c-0.252-0.251-0.66-0.251-0.911,0c-0.252,0.252-0.252,0.66,0,0.911L7.629,14.566z"
+                                    style="stroke: white;fill:white;"></path>
+                            </svg>
+                            <label>Extra deg 35kr</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Uträknad kostnad -->
+            <h4 style="padding-top: 15px; padding-bottom:10px"> <b>Totalkostnad:</b> [[finalAmount]]</h4>
+
+            <div class="h-divider"></div>
+
+            <div class="form-check" style="padding-bottom:10px">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label">Jag har swishat [[finalAmount]] kr till <b>123 456 789</b></label>
+            </div>
+
+            <!-- Informativ text -->
+            <div class="form-text" style="padding-bottom: 10px">
+                Du kan plocka upp ditt pizzakit på vår butik La Bottega Meno Male på Sibyllegatan 43 (bredvid Meno Male
+                Östermalm). La Bottega kommer öppna upp på riktigt så snart världen blir friskare.
+            </div>
+
+            <!-- Skicka beställning -->
+            <a href="https://www.youtube.com/watch?v=zQawXvCd-fs" class="btn btn-primary">Skicka beställning</a>
+        </form>
+
+</body>
+
+</html>
